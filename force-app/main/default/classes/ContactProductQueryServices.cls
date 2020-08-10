@@ -19,7 +19,7 @@ public class ContactProductQueryServices {
 
     return [SELECT Id, Product2Id, Product2.Name, ATM_Fee_in_other_currencies__c, Card_Replacement_Cost__c, Cost_per_Calendar_Month__c, Pricebook2.Name, CurrencyIsoCode FROM PricebookEntry WHERE Pricebook2.Name  In : homeCountryList AND Product2Id In : productList];
   }
-  public static List<Contact> getContacts(Set<String> uuidList) {
+  public static List<Contact> getContacts(List<String> uuidList) {
 
     return [SELECT Id, Product__c, UUID__c, Home_Country__c FROM Contact WHERE UUID__c IN :uuidList];
   }
