@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="ProductInformationController">
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="caseRecord" type="Object"/>
+    <aura:attribute name="priceBookId" type="Id"/>
+    <aura:attribute name="pricebookEntryFields" type="String[]" default="Name,ATM_Fee_in_other_currencies__c,Card_Replacement_Cost__c,Cost_per_Calendar_Month__c"/>
+    <force:recordData aura:id="contactRecordId"
+                        recordId="{!v.recordId}"
+                        fields="Contact.Product__c,Contact.Home_Country__c"
+                        targetFields="{!v.caseRecord}"
+                      	recordUpdated="{! c.handleRecordChanged }"
+                        layoutType="FULL"/>
+    <lightning:card iconName="standard:product" title="Product Information">
+        <div class="slds-p-left_large slds-p-right_medium">
+            <lightning:recordForm aura:id="brokerForm"
+                                recordId="{!v.priceBookId}"
+                                objectApiName="PricebookEntry"
+                                fields="{!v.pricebookEntryFields}"
+                                columns="2"
+                                mode="View"/>
+        </div>
+    </lightning:card>
+</aura:component>

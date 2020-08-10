@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-09-2020
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+  Modifications Log 
+  Ver   Date         Author                               Modification
+  1.0   08-09-2020   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
+<template>
+  <lightning-card title="Product Information" icon-name="standard:product">
+      <lightning-record-form record-id={pricebookid} 
+          object-api-name="PricebookEntry"
+          fields={fields}
+          columns="2"
+          mode="View"
+          >
+      </lightning-record-form>
+  </lightning-card>
+</template>

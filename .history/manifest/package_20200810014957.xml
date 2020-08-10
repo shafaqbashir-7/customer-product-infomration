@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>CustomerProductInformationController</members>
+		<members>ProductInformationController</members>
+		<members>CustomerProductInformationControllerTest</members>
+		<members>TestSetup</members>
+		<members>ContactProductQueryServices</members>
+		<members>RestCustomerProductInformationTest</members>
+		<members>RestCustomerProductInformation</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>productInformation</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+	<types>
+		<members>Contact</members>
+		<members>PricebookEntry</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>48.0</version>
+</Package>
