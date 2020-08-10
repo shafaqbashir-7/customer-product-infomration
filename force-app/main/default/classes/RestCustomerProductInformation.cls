@@ -18,7 +18,7 @@
   global static final Integer SERVER_ERROR = 500;
 
   @HttpPost
-  global static CustomerProductInformationResponse getCustomerProductInformation(List<String> uuidList) {
+  global static CustomerProductInformationResponse RestCustomerProductInformation(List<String> uuidList) {
     RESTRequest req  = RESTContext.request;
     RESTResponse res = RESTContext.response;	
 
