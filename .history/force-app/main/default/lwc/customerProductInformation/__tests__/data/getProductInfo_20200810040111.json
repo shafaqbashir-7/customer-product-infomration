@@ -1,0 +1,16 @@
+{
+  "fields": {
+    "Name": {
+      "value": "DE"
+    },
+    "ATM_Fee_in_other_currencies__c": {
+      "value": 0.01
+    },
+    "Card_Replacement_Cost__c": {
+      "value": 6
+    },
+    "Cost_per_Calendar_Month__c": {
+      "value": 10
+  }
+  }
+}
