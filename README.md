@@ -181,4 +181,4 @@ TESTING
 -   Tests are written to cover the all the possible scenarios
 -   JEST Unit for `lwc` component
 -   I have tried writting jest unit testing for `lwc` component but since i used two different type of `wireAdaptors` in my controller class, i kept running into issues.As my knowledge in jest unit testing is very limited and salesforce doesnt have a good documentation on how to do it. I couldnt move forward with this. 
--   One other possible way is to use single `wireAdaptor` and use the neccesary code to `ApexController` and write jest unit. 
+-   One other possible way is to use single `wireAdaptor` and move the neccesary code to `ApexController` and write jest unit. 
